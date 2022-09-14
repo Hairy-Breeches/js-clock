@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets -->
+    <link href="./dist/output.css" rel="stylesheet">
+    
+    <title>Js-clock</title>
+</head>
+<body class="bg-blackish font-sarpanch">
+    <!-- Flex Container -->
+   <div class="flex flex-col justify-center items-center h-screen">
+        <!-- Days of the weekend -->
+        <div class="hidden gap-4 md:flex">
+            <p id="1" class="text-grayish text-5xl xl:text-3xl md:text-2xl">Tuesday</p>
+            <p id="2" class="text-grayish text-5xl xl:text-3xl md:text-2xl">Monday</p>
+            <p id="3" class="text-grayish text-5xl xl:text-3xl md:text-2xl">Wednesday</p>
+            <p id="4" class="text-grayish text-5xl xl:text-3xl md:text-2xl">Thursday</p>
+            <p id="5" class="text-grayish text-5xl xl:text-3xl md:text-2xl">Friday</p>
+            <p id="6" class="text-grayish text-5xl xl:text-3xl md:text-2xl">Saturday</p>
+            <p id="0" class="text-grayish text-5xl xl:text-3xl md:text-2xl">Sunday</p>
+        </div>
+        <div class="gap-4 sm:flex md:hidden">
+            <p class="text-greenish text-3xl" id="daysOnMobile"></p>
+        </div>
+        <!-- Time -->
+        <div>
+            <h id="time" class="text-greenish xl:text-custom md:text-7xl sm:text-6xl "></h>
+        </div>
+        <!-- AM or PM -->
+        <div class="flex flex-col  gap-2 md:flex-row md:gap-8">
+            <button id="12" type="button" class="text-3xl text-left">12 Hour</button>
+            <button id="24" type="button" class="text-3xl">24 Hour</button>
+        </div>
+   </div>
+
+   <script src="app.js"></script>
+</body>
+</html>

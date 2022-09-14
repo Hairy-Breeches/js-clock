@@ -1,0 +1,19 @@
+{
+  "name": "js-clock",
+  "version": "1.0.0",
+  "description": "Digital watch project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./styles.css -o ./dist/output.css",
+    "watch": "npx tailwindcss -i ./styles.css -o ./dist/output.css --watch"
+  },
+  "author": "Hairy Breeches",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
